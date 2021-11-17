@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
+
+/**************
+2. Body and some general stuff
+**************/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+div
+{
+	display: block;
+	position: relative;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+p
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 400;
+	color: #535353;
+}
+a
+{
+	transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+}
+
+.button
+{
+	width: 190px;
+	height: 43px;
+	border-radius: 22px;
+	background: #f98c00;
+	box-shadow: 0 0 1px 0 #FFFFFF inset, 0 0 1px 0 #FFFFFF;
+	text-align: center;
+}
+.button a
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 43px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	z-index: 1;
+}
+.button:hover a::before
+{
+	width: 100%;
+}
+/*************
+3. Header
+*************/
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: solid 1px #FFFFFF;
+	background: #262626;
+	z-index: 100;
+}
+.header_content
+{
+	width: 100%;
+	height: 101px;
+	display: flex;
+	flex: row;
+	align-items: center;
+    flex:start;
+    margin-left: 80px;
+}
+.logo
+{
+	left: -30px;
+	display:flex;
+	flex:row;
+	align-items:center;
+    flex:start;
+    cursor: default;
+}
+.logo > div
+{
+	font-size: 28.3px;
+	line-height: 0.75;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.logo > div span
+{
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.main_nav
+{
+	margin-left: 120px;
+}
+
+.main_nav >ul{
+	list-style: none;
+	margin-bottom: 0px;
+	display:flex;
+	flex:row;
+	align-items:center;
+	flex:start;
+}
+.main_nav ul li:not(:last-of-type)
+{
+	margin-right: 65px;
+}
+.main_nav ul li a
+{
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+}
+.main_nav ul li.active a,
+.main_nav ul li a:hover
+{
+	color: #ff9711;
+}
+/*********************************
+4. Home
+*********************************/
+.home
+{
+	height: 700px;
+	overflow: hidden;
+}	
+.container{
+	text-align: center;
+}
+.home_container
+{
+	top: 40%;
+}
+.home_coontent{
+	text-align: center;
+}
+.home_tiitle
+{
+	font-size: 72px;
+	font-weight: 200;
+	color: #fff;
+	line-height: 1.2;
+	margin-top: -9px;
+	text-align: center;
+}
+.home_subtiitle
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 1px;
+	text-align: center;
+}
+.background_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+/*********************************
+5. Contact
+*********************************/
+.contact
+{
+    width: 100%;
+	background: #FFFFFF;
+	padding-top: 42px;
+	padding-bottom: 50px;
+}
+.containerr{
+	margin-left: 80px;
+}
+.contact_logo .logo
+{
+	left: auto;
+}
+.contact_logo .logo >div
+{
+	color: #262626;
+}
+.contact_text
+{
+	margin-top: 30px;
+	padding-right: 50px;
+	width: 50%;
+}
+
+.contact_list
+{
+	margin-top: 51px;
+	max-width: 230px;
+	color: #262626;
+}
+.contact_list > ul {
+	display: inline;
+}
+.contact_list ul li:not(:last-of-type)
+{
+	margin-bottom: 26px;
+}
+.contact_title
+{
+	font-size: 24px;
+	margin-top: 0px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	color: #262626;
+	line-height: 0.75;
+}
+.contact_col
+{
+    margin-top: -270px;
+    margin-left: 50%;
+}
+.input_item > input[type=text]{
+	width: 570px ;
+	text-align: start;
+	height: 52px;
+}
+.contaact_input
+{
+	height: 52px;
+	width: 570px ;
+	border: none;
+	outline: none;
+	background: #eff4f6;
+	padding-left: 0px;
+	border-left: solid 2px transparent;
+}
+.input_item
+{
+	margin-bottom: 17px;
+}
+.contaact_input::-webkit-input-placeholder
+{
+	font-size: 12px;
+}
+.contact_textarea
+{
+	padding-top: 15px;
+	height: 190px;
+}
+.contact_button
+{
+	position: relative;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFFFFF;
+	z-index: 1;
+	margin-top: 17px;
+}
+.contact_button::before
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ff9711;
+	width: 130px;
+	height: 100%;
+	border-radius: 22px;
+	z-index: -1;
+	content: '';
+    transition: all 200ms ease;
+}
+.contact_button:hover::before
+{
+	width: 100%;
+}
